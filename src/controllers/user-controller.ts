@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
 const userService = require('../services/user-service');
-;
+
 exports.index = async (req: Request, res: Response) => {
   try {
     const userData = userService.getUsers();
